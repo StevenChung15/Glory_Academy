@@ -70,7 +70,7 @@ app.post('/',(req,res,next) => {
 app.delete('/:id',(req,res) => {
     const coursesID = req.params.id;
 
-    db.getDB().collection(collection).findOneAndDelete({_id : db.getPrimaryKey(coursesID)},(err,reseult) => {
+    db.getDB().collection(collection).findOneAndDelete({_id : db.getPrimaryKey(coursesID)},(err,result) => {
         if(err)
             console.log(err);
         else
