@@ -60,7 +60,7 @@ app.post('/',(req,res,next) => {
                     next(error);
                 }
                 else
-                    res.json({result : result, documents : result.ops[0],msg : "Successfully inserted Courses!!!",error : null});
+                    res.json({result : result, document : result.ops[0],msg : "Successfully inserted Courses!!!",error : null});
             });
         }
     })
